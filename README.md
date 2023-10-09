@@ -1,6 +1,6 @@
 # geolocate
 
-Querying Geolocation DB to geoloate IP address
+Querying Geolocation DB to geolocate IP address
 
 1. Import requests package by running 'pip3 install requests'
 
