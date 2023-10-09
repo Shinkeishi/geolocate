@@ -11,6 +11,7 @@ try:
     ip_address = ''
     latitude = ''
     longitude = ''
+    location = ''
 
     # Read trace_route_output.csv file
     with open('data/traceroute_output.csv', mode='r') as file1:
@@ -49,6 +50,7 @@ try:
 
                 latitude = result['latitude']
                 longitude = result['longitude']
+                country_name = result['country_name']
 
                 print(
                     f"Reading {reading}: Hop {hop}, Latitude {latitude}, Longitude {longitude}")
@@ -61,6 +63,7 @@ try:
                 data_list.append(website)
                 data_list.append(hop)
                 data_list.append(ip_address)
+                data_list.append(country_name)
                 data_list.append(latitude)
                 data_list.append(longitude)
 
